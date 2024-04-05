@@ -2,6 +2,10 @@ name: Post-step action
 
 description: 'Allows composite GitHub Actions to define a post-run step.'
 
+branding:
+  icon: anchor
+  color: gray-dark
+
 inputs:
   post:
     description: 'Post command/script.'
