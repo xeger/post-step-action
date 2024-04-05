@@ -1,0 +1,13 @@
+name: Post-step action
+
+description: 'Allows composite GitHub Actions to define a post-run step.'
+
+inputs:
+  post:
+    description: 'Post command/script.'
+    required: true
+
+runs:
+  using: 'node20'
+  main: 'main.js'
+  post: 'post.js'
