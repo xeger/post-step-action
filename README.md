@@ -4,6 +4,8 @@ This is a GitHub action that lets you define your own post-run script for a GitH
 It is especially useful to other GitHub actions with `using: composite`, as they cannot define their own post-run steps.
 As a workaround, composite actions can call this action as a step.
 
+This action is derived from [pyTooling/Actions](https://github.com/pyTooling/Actions/tree/main/with-post-step) and is packaged for distribution in the Github Marketplace as a convenience to the GitHub community.
+
 ## Usage
 
 ### With a Job
@@ -16,7 +18,7 @@ jobs:
       - uses: xeger/post-step-action@main
         with:
           post: |
-            echo "Goodbye, and thanks for all the fish."
+            echo "So long, and thanks for all the fish."
       - run: |
           echo "Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun."
 ```
